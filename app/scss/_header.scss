@@ -1,0 +1,35 @@
+.header {
+    nav {
+    
+    }
+
+    &__logo {
+
+        img {
+            width: 14.75rem;
+            height: 1.625rem;
+        }
+    }
+
+    &__links {
+
+        a {
+            //position: relative;
+            font-size: $font-sm;
+            font-weight: 700;
+            color: $Grey;
+            text-transform: uppercase;
+            letter-spacing: 0.92px;
+        
+
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+        }
+        
+    }
+
+    
+}
+        
+        
