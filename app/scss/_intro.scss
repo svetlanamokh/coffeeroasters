@@ -1,0 +1,33 @@
+.intro {
+
+    &__image {
+        position: relative;
+        background-image: url('/images/home/desktop/image-hero-coffeepress.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 37.5rem;
+        border-radius: 5px;
+    }
+
+    .light {
+        color:$LightCream;
+        margin-bottom: 3.5rem;
+        max-width: 24.75rem;
+    }
+
+    h1 {
+        max-width: 30.8125rem;
+        padding-top: 7.3125rem;
+        margin-bottom: 2rem;
+        
+    }
+
+    .wrapper {
+        margin-bottom: 8.5rem;
+    }
+
+}
+
+
+    
