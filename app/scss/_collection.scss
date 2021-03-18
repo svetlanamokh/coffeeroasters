@@ -2,12 +2,16 @@
 
     .pale {
         font-size: 9.375rem;
-        color: $Grey;
-        //background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
-      
+        background-image: linear-gradient(180deg, #979ba0, #FEFCF7);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 100%;
     }
 
     &__grid {
+        position: relative;
+        top: -50px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 1.875rem;
@@ -19,6 +23,27 @@
         background-repeat: no-repeat;
         background-position: center center;
         margin: 0 0 4.4375rem 0;
+    }
+
+    &__title {
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 32px;
+        text-align: center;
+        color: #333D4B;
+        padding-bottom: 1.5rem;
+    }
+
+    &__description {
+        font-size: 1rem;
+        line-height: 26px;
+        text-align: center;
+        color: #333D4B;
+    }
+
+    &__item {
+        max-width: 15.9375rem;
     }
 }
 

@@ -15,7 +15,7 @@ body {
     font-size: $font-med;
     font-weight: 400;
     //line-height: 1.3;
-    min-height: 200vh;
+    min-height: 400vh;
 
 }
 
@@ -35,6 +35,19 @@ h1 {
     font-size: $font-xlg;
     line-height: 72px;
     color: $LightCream;
+}
+
+h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.5rem;
+    line-height: 32px;
+    font-weight: 900;;
 }
 
 p {
@@ -71,6 +84,7 @@ p {
 
 .container2 {
     padding-left: 5.3125rem;
+    padding-right: 5.3125rem;
 }
 
 // Buttons

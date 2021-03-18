@@ -1,0 +1,53 @@
+.feature {
+    .container {
+        margin-top: 13.75rem;
+    }
+
+    &__title {
+        color: $Grey;
+        margin-bottom: 5rem;
+    }
+
+    &__circle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+
+        .line {
+            width: 250px;
+            height: 2px;
+            background-color: $PaleOrange;
+            //position: absolute;
+        }
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 4.1875rem;
+        gap: 5.9375rem;
+        margin-bottom: 4rem;
+    }
+
+    &__subtitle {
+        color: $DarkGreyBlue;
+        margin-bottom: 2.625rem;
+        font-size: 2rem;
+        max-width: 12.5rem;
+    }
+
+    &__number {
+        margin-bottom: 2.375rem;
+        font-family: 'Fraunces', sans-serif;
+        font-size: $font-xlg;
+        color: $PaleOrange;
+    }
+
+    &__description {
+        color: $DarkGreyBlue;
+    }
+
+    .button {
+        margin-bottom: 12.5rem;
+    }
+}

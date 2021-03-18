@@ -1,0 +1,22 @@
+.footer {
+    background-color: $DarkGreyBlue;
+    min-height: 7.5rem;
+    padding-top: 2.9375rem;
+
+    a:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .social__links {
+        text-align: right;
+    }
+
+    .header__links {
+        text-align: left;
+    }
+}

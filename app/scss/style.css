@@ -16,7 +16,7 @@ body {
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  min-height: 200vh;
+  min-height: 400vh;
 }
 
 a, a:visited, a:hover {
@@ -33,6 +33,19 @@ h1 {
   font-size: 4.5rem;
   line-height: 72px;
   color: #fefcf6;
+}
+
+h2 {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: 'Fraunces', sans-serif;
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 900;
 }
 
 p {
@@ -73,6 +86,7 @@ p {
 
 .container2 {
   padding-left: 5.3125rem;
+  padding-right: 5.3125rem;
 }
 
 .button {
@@ -138,13 +152,14 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 37.5rem;
-  border-radius: 5px;
+  border-radius: 7px;
 }
 
 .intro .light {
   color: #fefcf6;
   margin-bottom: 3.5rem;
   max-width: 24.75rem;
+  line-height: 26px;
 }
 
 .intro h1 {
@@ -159,10 +174,17 @@ p {
 
 .collection .pale {
   font-size: 9.375rem;
-  color: #848990;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#979ba0), to(#FEFCF7));
+  background-image: linear-gradient(180deg, #979ba0, #FEFCF7);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 100%;
 }
 
 .collection__grid {
+  position: relative;
+  top: -50px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -176,5 +198,168 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
   margin: 0 0 4.4375rem 0;
+}
+
+.collection__title {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-align: center;
+  color: #333D4B;
+  padding-bottom: 1.5rem;
+}
+
+.collection__description {
+  font-size: 1rem;
+  line-height: 26px;
+  text-align: center;
+  color: #333D4B;
+}
+
+.collection__item {
+  max-width: 15.9375rem;
+}
+
+.benefits {
+  margin-top: 6.25rem;
+  height: 45.5rem;
+}
+
+.benefits .container {
+  background-color: #2C343E;
+  height: 36.0625rem;
+  border-radius: 7px;
+}
+
+.benefits h2 {
+  color: #fefcf6;
+  text-align: center;
+  padding: 6.25rem 0 2rem 0;
+  font-size: 2.5rem;
+}
+
+.benefits .light {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fefcf6;
+  text-align: center;
+  max-width: 33.75rem;
+  font-weight: 300;
+  margin-bottom: 5.625rem;
+}
+
+.benefits__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+  height: 23.875rem;
+}
+
+.benefits__item {
+  background-color: #0e8684;
+  border-radius: 7px;
+}
+
+.benefits__image {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 4.5rem auto;
+}
+
+.benefits__title {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 32px;
+  text-align: center;
+  color: #fefcf6;
+  margin-bottom: 1.5rem;
+}
+
+.benefits__description {
+  padding: 0 2.9375rem;
+}
+
+.feature .container {
+  margin-top: 13.75rem;
+}
+
+.feature__title {
+  color: #848990;
+  margin-bottom: 5rem;
+}
+
+.feature__circle {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.feature__circle .line {
+  width: 250px;
+  height: 2px;
+  background-color: #fdd6ba;
+}
+
+.feature__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  margin-top: 4.1875rem;
+  gap: 5.9375rem;
+  margin-bottom: 4rem;
+}
+
+.feature__subtitle {
+  color: #343e4c;
+  margin-bottom: 2.625rem;
+  font-size: 2rem;
+  max-width: 12.5rem;
+}
+
+.feature__number {
+  margin-bottom: 2.375rem;
+  font-family: 'Fraunces', sans-serif;
+  font-size: 4.5rem;
+  color: #fdd6ba;
+}
+
+.feature__description {
+  color: #343e4c;
+}
+
+.feature .button {
+  margin-bottom: 12.5rem;
+}
+
+.footer {
+  background-color: #343e4c;
+  min-height: 7.5rem;
+  padding-top: 2.9375rem;
+}
+
+.footer a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.footer .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+}
+
+.footer .social__links {
+  text-align: right;
+}
+
+.footer .header__links {
+  text-align: left;
 }
 /*# sourceMappingURL=style.css.map */
