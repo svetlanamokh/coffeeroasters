@@ -35,6 +35,11 @@ h1 {
     font-size: $font-xlg;
     line-height: 72px;
     color: $LightCream;
+
+    @include breakpoint-down(medium) {
+        font-size: 3rem;
+        width: 20.625rem;
+    }
 }
 
 h2 {
@@ -80,12 +85,27 @@ p {
 .container {
     max-width: 80rem;
     margin: 0 auto;
+
+
+   @include breakpoint-down(medium){
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    &--px {
+        padding-left: 5.3125rem;
+        padding-right: 5.3125rem;
+
+        @include breakpoint-down(medium){
+            padding-left: 0px;
+            padding-right: 0px;
+
+
+        }
+
+    }
 }
 
-.container2 {
-    padding-left: 5.3125rem;
-    padding-right: 5.3125rem;
-}
 
 // Buttons
 .button {

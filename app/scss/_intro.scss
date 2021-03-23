@@ -1,5 +1,13 @@
 .intro {
 
+    .container--px {
+
+        @include breakpoint-down(medium) {
+            padding-left: 57px;
+            padding-right: 57px;
+        }
+    }
+
     &__image {
         position: relative;
         background-image: url('/images/home/desktop/image-hero-coffeepress.jpg');
@@ -21,6 +29,10 @@
         max-width: 30.8125rem;
         padding-top: 7.3125rem;
         margin-bottom: 2rem;
+
+        @include breakpoint-down(medium) {
+            line-height: 48px;
+        }
         
     }
 
