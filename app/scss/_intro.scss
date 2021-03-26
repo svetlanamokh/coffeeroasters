@@ -1,10 +1,23 @@
 .intro {
 
+    .container {
+        @include breakpoint-down(small) {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+    }
+
     .container--px {
 
         @include breakpoint-down(medium) {
             padding-left: 57px;
             padding-right: 57px;
+
+            @include breakpoint-down(small) {
+                padding-right: 24px;
+                padding-left: 24px;
+                text-align: center;
+            }
         }
     }
 
@@ -13,9 +26,10 @@
         background-image: url('/images/home/desktop/image-hero-coffeepress.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center center;
+        background-position: center;
         min-height: 37.5rem;
         border-radius: 7px;
+
     }
 
     .light {
@@ -33,6 +47,11 @@
         @include breakpoint-down(medium) {
             line-height: 48px;
         }
+
+        @include breakpoint-down(small) {
+            width: 100%;
+        }
+        
         
     }
 

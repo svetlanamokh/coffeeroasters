@@ -26,8 +26,16 @@
             &:not(:last-child){
                 margin-right: 32px;
             }
+
         }
-        
+
+    }
+
+    .first {
+            
+        @include breakpoint-down(small) {
+            display: none;
+        }
     }
 
     

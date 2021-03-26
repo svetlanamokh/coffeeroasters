@@ -1,6 +1,10 @@
 .benefits {
     margin-top: 6.25rem;
 
+    @include breakpoint-down(small) {
+        margin-top: 5rem;
+    }
+
     .container {
         background-color: #2C343E;
         border-radius: 7px;
@@ -10,6 +14,12 @@
 
         @include breakpoint-down(medium) {
             padding-bottom: 368px;
+        }
+
+        @include breakpoint-down(small) {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            padding-bottom: 600px;
         }
     }
 
@@ -22,6 +32,12 @@
         @include breakpoint-down(medium) {
             padding-top: 3.5rem;
         }
+
+        
+        @include breakpoint-down(small) {
+            font-size: 1.75rem;
+            line-height: 28px;
+        }
     }
 
     .light {
@@ -33,6 +49,7 @@
         max-width: 33.75rem;
         font-weight: 300;
         line-height: 26px;
+
     }
 
     &__grid {
@@ -48,6 +65,13 @@
             width: 100%;
             top: 285px;
         }
+
+        @include breakpoint-down(small) {
+            max-width: 295px;
+            text-align: center;
+            margin-top: 45px;
+            gap: 24px;
+        }
     }
 
     &__item {
@@ -59,7 +83,13 @@
             grid-template-columns: 1fr 2fr;
             margin-left: 57px;
             margin-right: 57px;
-            
+
+        }
+
+        @include breakpoint-down(small) {
+            margin: 0px;
+            display: grid;
+            grid-template-columns: 1fr;
         }
     }
 
@@ -67,6 +97,10 @@
 
         @include breakpoint-down(medium) {
             text-align: left;
+        }
+
+        @include breakpoint-down(small) {
+            text-align: center;
         }
     }
 
@@ -84,6 +118,14 @@
             width: 56px;
             height: 56px;
         }
+
+        @include breakpoint-down(small) {
+            margin: 56px auto 56px auto;
+            text-align: center;
+            width: 72px;
+            height: 72px;
+            
+        }
     }
         
     &__title {
@@ -100,6 +142,12 @@
             text-align: left;
             margin-top: 40px;
         }
+
+        @include breakpoint-down(small) {
+            text-align: center;
+            margin-top: 0;
+        }
+
     }
 
     &__description {
@@ -120,6 +168,13 @@
             padding: 0px;
             margin-left: 0px;
             line-height: 25px;
+        }
+
+        @include breakpoint-down(small) {
+            text-align: center;
+            margin-right: 0;
+            padding-right: 34px;
+            padding-left: 34px;
         }
     }
 
