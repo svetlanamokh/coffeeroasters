@@ -16,7 +16,6 @@ body {
   font-family: 'Barlow', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  min-height: 400vh;
 }
 
 a, a:visited, a:hover {
@@ -954,5 +953,124 @@ p {
     margin-top: 3.375rem;
     margin-bottom: 2rem;
   }
+}
+
+.about-us {
+  margin-bottom: 168px;
+}
+
+.about-us__image {
+  background: url(/images/about/desktop/image-hero-whitecup.jpg);
+  background-size: cover;
+  height: 450px;
+  border-radius: 8px;
+}
+
+.about-us__title {
+  color: #fefcf6;
+  padding-top: 137px;
+  padding-bottom: 24px;
+}
+
+.about-us__description {
+  color: #fefcf6;
+  font-size: 1rem;
+  max-width: 445px;
+}
+
+.commitment {
+  margin-bottom: 250px;
+}
+
+.commitment__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 125px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.commitment__image {
+  background: url(/images/about/desktop/image-commitment.jpg) no-repeat;
+  background-size: 100%;
+  height: 520px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.commitment__title {
+  margin-bottom: 32px;
+}
+
+.quality {
+  margin-bottom: 168px;
+}
+
+.quality .container {
+  background: #343e4c;
+  height: 474px;
+  border-radius: 8px;
+}
+
+.quality__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1.5fr;
+      grid-template-columns: 2fr 1.5fr;
+  gap: 125px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quality__title {
+  color: #fefcf6;
+  margin-bottom: 32px;
+}
+
+.quality__description {
+  color: #fefcf6;
+  max-width: 540px;
+}
+
+.quality__image {
+  background: url(/images/about/desktop/image-quality.jpg) no-repeat;
+  height: 474px;
+  max-width: 445px;
+  border-radius: 8px;
+  position: relative;
+  top: -75px;
+}
+
+.headquarters {
+  margin-bottom: 168px;
+}
+
+.headquarters .main__title {
+  color: #848990;
+  margin-bottom: 72px;
+}
+
+.headquarters__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 95px;
+}
+
+.headquarters__icon {
+  width: 50px;
+  height: 50px;
+  background: no-repeat;
+  margin-bottom: 46px;
+}
+
+.headquarters__title {
+  font-size: 32px;
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=style.css.map */

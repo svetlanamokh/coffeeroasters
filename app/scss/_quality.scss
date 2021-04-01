@@ -1,0 +1,37 @@
+.quality {
+    margin-bottom: 168px;
+
+    .container {
+        background: $DarkGreyBlue;
+        height: 474px;
+        border-radius: 8px;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+        gap: 125px;
+        align-items: center;
+    }
+
+
+    &__title {
+        color: $LightCream;
+        margin-bottom: 32px;
+    }
+
+    &__description {
+        color: $LightCream;
+        max-width: 540px;
+    }
+
+
+    &__image {
+        background: url(/images/about/desktop/image-quality.jpg) no-repeat;
+        height: 474px;
+        max-width: 445px;
+        border-radius: 8px;
+        position: relative;
+        top: -75px;
+    }
+}
