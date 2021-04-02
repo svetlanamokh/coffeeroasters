@@ -12,17 +12,52 @@
         grid-template-columns: 2fr 1.5fr;
         gap: 125px;
         align-items: center;
+
+        @include breakpoint-down(medium) {
+            grid-template-columns: 1fr;
+            gap: 64px;
+            text-align: center;
+        }
+    }
+
+    &__text {
+
+        @include breakpoint-down(medium) {
+            position: relative;
+            bottom: -200px;
+        }
+
+        @include breakpoint-down(small) {
+            position: relative;
+            bottom: -100px;
+        }
+        
     }
 
 
     &__title {
         color: $LightCream;
         margin-bottom: 32px;
+
+        @include breakpoint-down(small){
+            font-size: 28px;
+        }
     }
 
     &__description {
         color: $LightCream;
         max-width: 540px;
+
+        @include breakpoint-down(medium) {
+            max-width: 100%;
+            padding: 0px 74px 67px 74px;
+        }
+
+        @include breakpoint-down(small){
+            font-size: 15px;
+            max-width: 100%;
+            padding: 0px 24px 61px 24px;
+        }
     }
 
 
@@ -33,5 +68,23 @@
         border-radius: 8px;
         position: relative;
         top: -75px;
+
+        @include breakpoint-down(medium) {
+            background: url(/images/about/tablet/image-quality.jpg) no-repeat;
+            top: -520px;
+            left: 57px;
+            max-width: 573px;
+            height: 320px;
+            background-size: cover;
+        }
+
+        @include breakpoint-down(small){
+            background: url(/images/about/mobile/image-quality.jpg) no-repeat;
+            background-size: cover;
+            max-width: 279px;
+            height: 156px;
+            top: -530px;
+            left: 35px;
+        }
     }
 }

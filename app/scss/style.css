@@ -322,6 +322,13 @@ p {
   border-radius: 7px;
 }
 
+@media (max-width: 63.9375em) {
+  .intro__image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .intro .light {
   color: #fefcf6;
   margin-bottom: 3.5rem;
@@ -959,6 +966,19 @@ p {
   margin-bottom: 168px;
 }
 
+@media (max-width: 63.9375em) {
+  .about-us .container--px {
+    padding-left: 58px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .about-us .container--px {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
 .about-us__image {
   background: url(/images/about/desktop/image-hero-whitecup.jpg);
   background-size: cover;
@@ -972,10 +992,34 @@ p {
   padding-bottom: 24px;
 }
 
+@media (max-width: 63.9375em) {
+  .about-us__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .about-us__title {
+    text-align: center;
+  }
+}
+
 .about-us__description {
   color: #fefcf6;
   font-size: 1rem;
   max-width: 445px;
+}
+
+@media (max-width: 63.9375em) {
+  .about-us__description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .about-us__description {
+    text-align: center;
+  }
 }
 
 .commitment {
@@ -993,6 +1037,19 @@ p {
           align-items: center;
 }
 
+@media (max-width: 63.9375em) {
+  .commitment__grid {
+    gap: 69px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .commitment__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .commitment__image {
   background: url(/images/about/desktop/image-commitment.jpg) no-repeat;
   background-size: 100%;
@@ -1001,8 +1058,38 @@ p {
   width: 100%;
 }
 
+@media (max-width: 63.9375em) {
+  .commitment__image {
+    background-size: cover;
+  }
+}
+
 .commitment__title {
   margin-bottom: 32px;
+}
+
+@media (max-width: 63.9375em) {
+  .commitment__title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .commitment__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .commitment__description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .commitment__description {
+    text-align: center;
+  }
 }
 
 .quality {
@@ -1026,14 +1113,58 @@ p {
           align-items: center;
 }
 
+@media (max-width: 63.9375em) {
+  .quality__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 64px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .quality__text {
+    position: relative;
+    bottom: -200px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .quality__text {
+    position: relative;
+    bottom: -100px;
+  }
+}
+
 .quality__title {
   color: #fefcf6;
   margin-bottom: 32px;
 }
 
+@media (max-width: 39.9375em) {
+  .quality__title {
+    font-size: 28px;
+  }
+}
+
 .quality__description {
   color: #fefcf6;
   max-width: 540px;
+}
+
+@media (max-width: 63.9375em) {
+  .quality__description {
+    max-width: 100%;
+    padding: 0px 74px 67px 74px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .quality__description {
+    font-size: 15px;
+    max-width: 100%;
+    padding: 0px 24px 61px 24px;
+  }
 }
 
 .quality__image {
@@ -1045,6 +1176,28 @@ p {
   top: -75px;
 }
 
+@media (max-width: 63.9375em) {
+  .quality__image {
+    background: url(/images/about/tablet/image-quality.jpg) no-repeat;
+    top: -520px;
+    left: 57px;
+    max-width: 573px;
+    height: 320px;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .quality__image {
+    background: url(/images/about/mobile/image-quality.jpg) no-repeat;
+    background-size: cover;
+    max-width: 279px;
+    height: 156px;
+    top: -530px;
+    left: 35px;
+  }
+}
+
 .headquarters {
   margin-bottom: 168px;
 }
@@ -1052,6 +1205,12 @@ p {
 .headquarters .main__title {
   color: #848990;
   margin-bottom: 72px;
+}
+
+@media (max-width: 39.9375em) {
+  .headquarters .main__title {
+    text-align: center;
+  }
 }
 
 .headquarters__grid {
@@ -1062,6 +1221,14 @@ p {
   gap: 95px;
 }
 
+@media (max-width: 39.9375em) {
+  .headquarters__grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
 .headquarters__icon {
   width: 50px;
   height: 50px;
@@ -1069,8 +1236,20 @@ p {
   margin-bottom: 46px;
 }
 
+@media (max-width: 39.9375em) {
+  .headquarters__icon {
+    margin-left: 142px;
+  }
+}
+
 .headquarters__title {
   font-size: 32px;
   margin-bottom: 24px;
+}
+
+@media (max-width: 39.9375em) {
+  .headquarters__title {
+    font-size: 28px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

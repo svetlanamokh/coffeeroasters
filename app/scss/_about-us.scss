@@ -1,23 +1,56 @@
 .about-us {
     margin-bottom: 168px;
 
+    @include breakpoint-down(medium) {
+        .container--px {
+            padding-left: 58px;
+        }
+    }
+
+    .container--px {
+
+        @include breakpoint-down(small) {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+
     &__image {
         background: url(/images/about/desktop/image-hero-whitecup.jpg);
         background-size: cover;
         height: 450px;
         border-radius: 8px;
+
+        
     }
 
     &__title {
         color: $LightCream;
         padding-top: 137px;
         padding-bottom: 24px;
+
+        @include breakpoint-down(medium) {
+            font-size: 32px;
+        }
+
+        @include breakpoint-down(small) {
+            text-align: center;
+        }
+
     }
 
     &__description {
         color: $LightCream;
         font-size: $font-med;
         max-width: 445px;
+
+        @include breakpoint-down(medium) {
+            font-size: 15px;
+        }
+
+        @include breakpoint-down(small) {
+            text-align: center;
+        }
     }
 
 }
