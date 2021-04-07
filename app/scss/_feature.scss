@@ -1,6 +1,5 @@
 .feature {
     .container {
-        margin-top: 21.9375rem;
 
         @include breakpoint-down(medium) {
             margin-top: 27.125rem;  
@@ -124,4 +123,5 @@
             margin-left: 65px;
         }
     }
+
 }

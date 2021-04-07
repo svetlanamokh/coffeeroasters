@@ -1,0 +1,84 @@
+.dark {
+
+    .darkness {
+        padding-top: 80px;
+
+        @include breakpoint-down(medium) {
+            padding-top: 50px;
+        }
+
+        @include breakpoint-down(small) {
+            padding-top: 30px;
+        }
+    }
+    
+    .step {
+        position: relative;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        border: 2px solid $DarkCyan;
+        background-color: $DarkGreyBlue;
+        line-height: 100px;
+        text-align: center;
+        margin-bottom: 4.1875rem;
+
+        @include breakpoint-down(small) {
+            display: none;
+        }
+    }
+
+    .container {
+        background: $DarkGreyBlue;
+        border-radius: 8px;
+    }
+
+    .container--px {
+        @include breakpoint-down(medium) {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+    }
+
+    &__figure {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: calc(100% + 5.9375rem);
+            height: 0;
+            border-bottom: 2px solid $PaleOrange;
+
+            @include breakpoint-down(medium) {
+                width: calc(100% + 1.875rem);
+            }
+        }
+
+        @include breakpoint-down(small) {
+            display: none;
+        }
+    }
+
+    &__subtitle {
+        color: $LightCream;
+        margin-bottom: 42px;
+        font-size: 32px;
+        max-width: 255px;
+
+        @include breakpoint-down(medium) {
+            font-size: 28px;
+        }
+    }
+
+    &__description {
+        color: $LightCream;
+        margin-bottom: 100px;
+        max-width: 355px;
+
+        @include breakpoint-down(medium) {
+            font-size: 15px;
+        }
+    }
+}
