@@ -1,0 +1,69 @@
+.order-summary {
+    
+    display: none;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 540px;
+
+    @include breakpoint-down(small) {
+        max-width: 400px;
+        height: 700px;
+        margin-bottom: 100px;
+    }
+
+    .order {
+        background-color: $DarkGreyBlue;
+        height: 136px;
+        padding-top: 48px;
+        padding-left: 56px; 
+
+        @include breakpoint-down(small) {
+            padding: 24px;
+            height: 88px;
+        }
+    }
+
+    h3 {
+        color: $LightCream;
+        font-size: 40px;
+    }
+
+    p {
+        padding-left: 56px; 
+        padding-right: 56px; 
+
+        @include breakpoint-down(small) {
+            padding: 24px;
+        }
+    }
+
+    .button {
+        margin-left: 56px; 
+    }
+
+    .chosen-points {
+        padding-top: 57px;
+        font-family: 'Fraunces', sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: $Grey;
+    }
+
+    .constant {
+        color: $DarkGreyBlue;
+    }
+
+    .counting {
+        margin-right: 56px; 
+        margin-bottom: 56px;
+        margin-top: 47px;
+    }
+
+    .nums {
+        font-family: 'Fraunces', sans-serif;
+        font-size: 32px;
+        font-weight: 900;
+    }
+}
