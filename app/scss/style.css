@@ -141,6 +141,8 @@ p {
 
 .button:hover {
   opacity: .75;
+  -webkit-transition: opacity 150ms ease-in-out;
+  transition: opacity 150ms ease-in-out;
 }
 
 .button:hover::before {
@@ -1518,6 +1520,7 @@ p {
   max-width: 228px;
   padding: 32px 28px 50px 28px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 @media (max-width: 63.9375em) {
@@ -1576,9 +1579,11 @@ p {
 
 .order-summary {
   display: none;
-  border: 1px solid black;
-  border-radius: 5px;
   max-width: 540px;
+  position: absolute;
+  top: 100px;
+  left: 480px;
+  z-index: 15;
 }
 
 @media (max-width: 39.9375em) {
@@ -1594,6 +1599,8 @@ p {
   height: 136px;
   padding-top: 48px;
   padding-left: 56px;
+  border: 1px solid #343e4c;
+  border-radius: 8px;
 }
 
 @media (max-width: 39.9375em) {
@@ -1646,5 +1653,11 @@ p {
   font-family: 'Fraunces', sans-serif;
   font-size: 32px;
   font-weight: 900;
+}
+
+.order-summary .wrapp {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
 }
 /*# sourceMappingURL=style.css.map */

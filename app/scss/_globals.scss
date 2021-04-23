@@ -137,6 +137,7 @@ p {
 
     &:hover {
         opacity: .75;
+        transition: opacity 150ms ease-in-out;
     }
 
     &:hover::before {
