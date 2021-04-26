@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="../app/scss/style.css">
   <title>createaplan</title>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var app = new Vue({
+        el: '#app',
+        data: {
+          seen: true
+        }
+      })
+    })
+  </script>
+
 </head>
 
   <body>
@@ -210,8 +222,8 @@
                 </div>
               </div>
 
-              <div class="accordion__result">
-                <h3 class="summary">Order Summary</h3>
+              <div id="app" class="accordion__result">
+                <h3 v-if="seen" class="summary">Order Summary</h3>
                 <p class="chosen-points">“I drink my coffee using _____, with a _____ type of bean. _____ , sent to me _____.”</p>
               </div>
 
