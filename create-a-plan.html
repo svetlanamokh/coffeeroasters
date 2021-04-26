@@ -11,16 +11,33 @@
   <title>createaplan</title>
 
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
-  <script>
+  
+  
+<script>
     document.addEventListener('DOMContentLoaded', function () {
       var app = new Vue({
         el: '#app',
         data: {
-          seen: true
+          formCoffee: "_____"
+        },
+        methods: {
+          openPanel(event) {
+            var panel = event.target.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          },
+          setFormCoffee(point) {
+            this.formCoffee = point
+          }         
         }
       })
     })
   </script>
+ 
+  
 
 </head>
 
@@ -109,22 +126,22 @@
               <a href="#!" class="links"><pre>04    Grind Option</pre></a><br>
               <a href="#!" class="links"><pre>05    Deliveries</pre></a>
             </div>
-            <div class="accordion__choises">
-              <button class="acc">How do you drink your coffee?</button>
+            <div id="app" class="accordion__choises">
+              <button v-on:click="openPanel($event)" class="acc">How do you drink your coffee?</button>
               <div class="panel">
                 <div class="panel__grid">
 
-                  <div class="panel__item">
+                  <div v-on:click="setFormCoffee('Capsule')" class="panel__item">
                     <h3 class="panel__title">Capsule</h3>
                     <p class="panel__desc">Compatible with Nespresso systems and similar brewers</p>
                   </div>
 
-                <div class="panel__item">
+                <div v-on:click="setFormCoffee('Filter')" class="panel__item">
                   <h3 class="panel__title">Filter</h3>
                   <p class="panel__desc">For pour over or drip methods like Aeropress, Chemex, and V60</p>
                 </div>
 
-                <div class="panel__item">
+                <div v-on:click="setFormCoffee('Espresso')" class="panel__item">
                   <h3 class="panel__title">Espresso</h3>
                   <p class="panel__desc">Dense and finely ground beans for an intense, flavorful experience</p>
                 </div>
@@ -132,7 +149,7 @@
               </div>
              </div>
 
-              <button class="acc">What type of coffee?</button>
+              <button v-on:click="openPanel($event)" class="acc">What type of coffee?</button>
               <div class="panel">
                 <div class="panel__grid">
 
@@ -154,7 +171,7 @@
                 </div>
               </div>
 
-              <button class="acc">How much would you like?</button>
+              <button v-on:click="openPanel($event)" class="acc">How much would you like?</button>
               <div class="panel">
                 <div class="panel__grid">
 
@@ -177,7 +194,7 @@
               </div>
             
 
-              <button class="acc">Want us to grind them?</button>
+              <button v-on:click="openPanel($event)" class="acc">Want us to grind them?</button>
               <div class="panel">
                 <div class="panel__grid">
 
@@ -200,7 +217,7 @@
               </div>
             
 
-              <button class="acc">How often should we deliver?</button>
+              <button v-on:click="openPanel($event)" class="acc">How often should we deliver?</button>
               <div class="panel">
                 <div class="panel__grid">
 
@@ -222,9 +239,9 @@
                 </div>
               </div>
 
-              <div id="app" class="accordion__result">
-                <h3 v-if="seen" class="summary">Order Summary</h3>
-                <p class="chosen-points">“I drink my coffee using _____, with a _____ type of bean. _____ , sent to me _____.”</p>
+              <div class="accordion__result">
+                <h3 class="summary">Order Summary</h3>
+                <p class="chosen-points">“I drink my coffee using {{ formCoffee }}, with a _____ type of bean. _____ , sent to me _____.”</p>
               </div>
 
               <a href="#!" class="button">Create your plan</a>
