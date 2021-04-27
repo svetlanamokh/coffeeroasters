@@ -1,9 +1,7 @@
 .accordion {
     margin-top: 150px;
-    //height: 330vh;
     
     &__wrapper {
-        //max-width: 820px;
         display: grid;
         grid-template-columns: 1fr 2fr;
 
@@ -83,6 +81,7 @@
             &:hover {
                 background-color: $PaleOrange;
             }
+
         }
 
         &__title {
@@ -129,4 +128,13 @@
         float: right;
         margin-bottom: 50px;
     }
+    
+    .green {
+        background-color: $DarkCyan;
+
+        &:hover {
+            background-color: $DarkCyan;
+        }
+    }
 }
+

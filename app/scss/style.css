@@ -1577,6 +1577,14 @@ p {
   margin-bottom: 50px;
 }
 
+.accordion .green {
+  background-color: #0e8684;
+}
+
+.accordion .green:hover {
+  background-color: #0e8684;
+}
+
 .order-summary {
   display: none;
   max-width: 540px;
@@ -1659,9 +1667,5 @@ p {
   background-color: white;
   border: 1px solid white;
   border-radius: 8px;
-}
-
-.green {
-  background-color: #0e8684;
 }
 /*# sourceMappingURL=style.css.map */
