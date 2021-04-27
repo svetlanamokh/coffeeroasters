@@ -22,17 +22,14 @@
           typeCoffee: "_____",
           amountCoffee: "_____",
           grindCoffee: "_____",
-          deliveryCoffee: "_____"
+          deliveryCoffee: "_____",
+          isOpenPanel: false,
+          isOpenSecondPanel: false,
+          isOpenThirdPanel: false,
+          isOpenFourthPanel: false,
+          isOpenFifthPanel: false
         },
         methods: {
-          openPanel(event) {
-            var panel = event.target.nextElementSibling;
-            if (panel.style.display === "block") {
-              panel.style.display = "none";
-            } else {
-              panel.style.display = "block";
-            }
-          },
           setFormCoffee(point) {
             this.formCoffee = point
           },
@@ -48,6 +45,21 @@
           setDeliveryCoffee(delivery) {
             this.deliveryCoffee = delivery
           },       
+          showPanel() {
+            this.isOpenPanel = !this.isOpenPanel
+          },
+          showSecondPanel() {
+            this.isOpenSecondPanel = !this.isOpenSecondPanel
+          },
+          showThirdPanel() {
+            this.isOpenThirdPanel = !this.isOpenThirdPanel
+          },
+          showFourthPanel() {
+            this.isOpenFourthPanel = !this.isOpenFourthPanel
+          },
+          showFifthPanel() {
+            this.isOpenFifthPanel = !this.isOpenFifthPanel
+          }
         }
       })
     })
@@ -130,20 +142,20 @@
       </div>
     </section>
 
-    <section class="accordion">
+    <section id="app" class="accordion">
       <div class="container">
         <div class="container--px">
           <div class="accordion__wrapper">
             <div class="accordion__links">
-              <a href="#!" class="links"><pre>01    Preferences</pre></a><br>
-              <a href="#!" class="links"><pre>02    Bean Type</pre></a><br>
-              <a href="#!" class="links"><pre>03    Quantity</pre></a><br>
-              <a href="#!" class="links"><pre>04    Grind Option</pre></a><br>
-              <a href="#!" class="links"><pre>05    Deliveries</pre></a>
+              <a v-on:click="showPanel()" href="#!" class="links"><pre>01    Preferences</pre></a><br>
+              <a v-on:click="showSecondPanel()" href="#!" class="links"><pre>02    Bean Type</pre></a><br>
+              <a v-on:click="showThirdPanel()" href="#!" class="links"><pre>03    Quantity</pre></a><br>
+              <a v-on:click="showFourthPanel()" href="#!" class="links"><pre>04    Grind Option</pre></a><br>
+              <a v-on:click="showFifthPanel()" href="#!" class="links"><pre>05    Deliveries</pre></a>
             </div>
-            <div id="app" class="accordion__choises">
-              <button v-on:click="openPanel($event)" class="acc">How do you drink your coffee?</button>
-              <div class="panel">
+            <div class="accordion__choises">
+              <button v-on:click="showPanel()" class="acc">How do you drink your coffee?</button>
+              <div :class="{ visible: isOpenPanel }" class="panel">
                 <div class="panel__grid">
 
                   <div v-on:click="setFormCoffee('Capsule')" v-bind:class="{ green: formCoffee === 'Capsule' }" class="panel__item">
@@ -164,8 +176,8 @@
                 </div>
              </div>
 
-              <button v-on:click="openPanel($event)" class="acc">What type of coffee?</button>
-              <div class="panel">
+              <button v-on:click="showSecondPanel()" class="acc">What type of coffee?</button>
+              <div :class="{ visible: isOpenSecondPanel }" class="panel">
                 <div class="panel__grid">
 
                   <div v-on:click="setTypeCoffee('Single Origin')" v-bind:class="{ green: typeCoffee === 'Single Origin' }" class="panel__item">
@@ -186,8 +198,8 @@
                 </div>
               </div>
 
-              <button v-on:click="openPanel($event)" class="acc">How much would you like?</button>
-              <div class="panel">
+              <button v-on:click="showThirdPanel()" class="acc">How much would you like?</button>
+              <div :class="{ visible: isOpenThirdPanel }" class="panel">
                 <div class="panel__grid">
 
                   <div v-on:click="setAmountCoffee('250g')" v-bind:class="{ green: amountCoffee === '250g' }" class="panel__item">
@@ -209,8 +221,8 @@
               </div>
             
 
-              <button v-on:click="openPanel($event)" class="acc">Want us to grind them?</button>
-              <div class="panel">
+              <button v-on:click="showFourthPanel()" class="acc">Want us to grind them?</button>
+              <div :class="{ visible: isOpenFourthPanel }" class="panel">
                 <div class="panel__grid">
 
                   <div v-on:click="setGrindCoffee('Wholebean')" v-bind:class="{ green: grindCoffee === 'Wholebean' }" class="panel__item">
@@ -232,8 +244,8 @@
               </div>
             
 
-              <button v-on:click="openPanel($event)" class="acc">How often should we deliver?</button>
-              <div class="panel">
+              <button v-on:click="showFifthPanel()" class="acc">How often should we deliver?</button>
+              <div :class="{ visible: isOpenFifthPanel }" class="panel">
                 <div class="panel__grid">
 
                   <div v-on:click="setDeliveryCoffee('Every week')" v-bind:class="{ green: deliveryCoffee === 'Every week' }" class="panel__item">

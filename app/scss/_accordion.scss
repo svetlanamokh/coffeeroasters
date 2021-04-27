@@ -48,12 +48,15 @@
         
     }
 
+    
+
     .panel {
         
         background-color: $LightCream;
         display: none;
         overflow: hidden;
         max-width: 730px;
+        
         
 
         &__grid {
@@ -88,6 +91,10 @@
             padding-bottom: 24px;
         }
 
+    }
+
+    .visible {
+        display: block;
     }
 
     

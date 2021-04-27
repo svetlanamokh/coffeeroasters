@@ -1537,6 +1537,10 @@ p {
   padding-bottom: 24px;
 }
 
+.accordion .visible {
+  display: block;
+}
+
 .accordion__result {
   visibility: visible;
   background-color: #343e4c;
