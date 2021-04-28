@@ -1,11 +1,15 @@
 .order-summary {
     
     display: none;
-    max-width: 540px;
-    position: absolute;
-    top: 100px;
-    left: 480px;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 15;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+
+    
 
     @include breakpoint-down(small) {
         max-width: 400px;
@@ -13,10 +17,32 @@
         margin-bottom: 100px;
     }
 
+    .modal-content {
+        margin: 5% auto; 
+        padding: 20px;
+        width: 50%;
+    }
+
+    .close-line {
+        margin-top: 10px;
+        background-color: #aaa;
+        float: right;
+        width: 15px;
+        height: 2px;
+        cursor: pointer;
+
+        &_first {
+            transform: rotate(45deg);
+        }
+
+        &_second {
+            transform: translateX(93%) rotate(-45deg);
+        }
+    }
+
     .order {
         background-color: $DarkGreyBlue;
         height: 136px;
-        padding-top: 48px;
         padding-left: 56px; 
         border: 1px solid $DarkGreyBlue;
         border-radius: 8px;
@@ -28,6 +54,7 @@
     }
 
     h3 {
+        padding-top: 48px;
         color: $LightCream;
         font-size: 40px;
     }
@@ -76,4 +103,8 @@
         border-radius: 8px;
     }
     
+}
+
+.show {
+    display: block;
 }
