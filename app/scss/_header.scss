@@ -1,16 +1,14 @@
 .header {
 
-
     nav {
-        padding-top: 3.125rem;
-        padding-bottom: 3.125rem;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     &__logo {
 
         img {
-            width: 14.75rem;
-            height: 1.625rem;
+            height: 100%;
         }
 
         @include breakpoint-down(small) {
@@ -31,9 +29,7 @@
             &:not(:last-child){
                 margin-right: 32px;
             }
-
         }
-
     }
 
     .header__links_first {
@@ -60,7 +56,6 @@
         @include breakpoint-up(large) {
             display: none;
         }
-
     }
 
     .burger__line {
@@ -84,7 +79,6 @@
         &_fourth {
             bottom: 0;
         }
-
     }
 
     .burger_active {
@@ -127,8 +121,6 @@
                 line-height: 32px;
                 margin: 40px auto 0 auto;
             }
-
-            
         }
 
         @include breakpoint-down(small) {
@@ -148,7 +140,6 @@
             display: none;
         }
     }
-
 }
 
    

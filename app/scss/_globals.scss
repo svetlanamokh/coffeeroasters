@@ -35,20 +35,20 @@ h1 {
     color: $LightCream;
 
     @include breakpoint-down(medium) {
-        font-size: 3rem;
-        width: 20.625rem;
+        font-size: 48px;
+        width: 330px;
     }
 }
 
 h2 {
     font-family: 'Fraunces', sans-serif;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 40px;
 }
 
 h3 {
     font-family: 'Fraunces', sans-serif;
-    font-size: 1.5rem;
+    font-size: 24px;
     line-height: 32px;
     font-weight: 900;;
 }
@@ -59,7 +59,6 @@ p {
     margin-top: 0;
     line-height: 26px;
 }
-
 
 // Flexbox
 .flex {
@@ -81,39 +80,46 @@ p {
 // Spacing
 
 .container {
-    max-width: 80rem;
+    max-width: 1280px;
     margin: 0 auto;
 
 
    @include breakpoint-down(medium){
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    @include breakpoint-down(small) {
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     &--px {
-        padding-left: 5.3125rem;
-        padding-right: 5.3125rem;
+        padding-left: 85px;
+        padding-right: 85px;
 
-        @include breakpoint-down(medium){
-            padding-left: 0px;
-            padding-right: 0px;
+        @include breakpoint-down(medium) {
+            padding-left: 57px;
+            padding-right: 57px;
 
-
+            @include breakpoint-down(small) {
+                padding-right: 24px;
+                padding-left: 24px;
+                text-align: center;
+            }
         }
-
     }
 }
-
 
 // Buttons
 .button {
     font-family: 'Fraunces', sans-serif;
-    font-size: 1.125rem;
+    font-size: 18px;
     line-height: 25px;
     position: relative;
     display: inline-block;
     background-color: $DarkCyan;
-    padding: 0.9375rem 1.9375rem;
+    padding: 15px 31px;
     border: 0;
     border-radius: 5px;
     cursor: pointer;
@@ -122,8 +128,6 @@ p {
     overflow: hidden;
     color: $LightCream;
     
-    
-
     &::before {
         content: "";
         position: absolute;
@@ -144,6 +148,4 @@ p {
         opacity: 1;
     }
 }
-
-// Visibility
 

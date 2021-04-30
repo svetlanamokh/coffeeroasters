@@ -36,20 +36,20 @@ h1 {
 
 @media (max-width: 63.9375em) {
   h1 {
-    font-size: 3rem;
-    width: 20.625rem;
+    font-size: 48px;
+    width: 330px;
   }
 }
 
 h2 {
   font-family: 'Fraunces', sans-serif;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 40px;
 }
 
 h3 {
   font-family: 'Fraunces', sans-serif;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 32px;
   font-weight: 900;
 }
@@ -86,37 +86,52 @@ p {
 }
 
 .container {
-  max-width: 80rem;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
 @media (max-width: 63.9375em) {
   .container {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .container {
+    margin-left: 24px;
+    margin-right: 24px;
   }
 }
 
 .container--px {
-  padding-left: 5.3125rem;
-  padding-right: 5.3125rem;
+  padding-left: 85px;
+  padding-right: 85px;
 }
 
 @media (max-width: 63.9375em) {
   .container--px {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 57px;
+    padding-right: 57px;
+  }
+}
+
+@media (max-width: 63.9375em) and (max-width: 39.9375em) {
+  .container--px {
+    padding-right: 24px;
+    padding-left: 24px;
+    text-align: center;
   }
 }
 
 .button {
   font-family: 'Fraunces', sans-serif;
-  font-size: 1.125rem;
+  font-size: 18px;
   line-height: 25px;
   position: relative;
   display: inline-block;
   background-color: #0e8684;
-  padding: 0.9375rem 1.9375rem;
+  padding: 15px 31px;
   border: 0;
   border-radius: 5px;
   cursor: pointer;
@@ -150,13 +165,12 @@ p {
 }
 
 .header nav {
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .header__logo img {
-  width: 14.75rem;
-  height: 1.625rem;
+  height: 100%;
 }
 
 @media (max-width: 39.9375em) {
@@ -296,35 +310,13 @@ p {
   }
 }
 
-@media (max-width: 39.9375em) {
-  .intro .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-}
-
-@media (max-width: 63.9375em) {
-  .intro .container--px {
-    padding-left: 57px;
-    padding-right: 57px;
-  }
-}
-
-@media (max-width: 63.9375em) and (max-width: 39.9375em) {
-  .intro .container--px {
-    padding-right: 24px;
-    padding-left: 24px;
-    text-align: center;
-  }
-}
-
 .intro__image {
   position: relative;
   background-image: url("/images/home/desktop/image-hero-coffeepress.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 37.5rem;
+  min-height: 600px;
   border-radius: 7px;
 }
 
@@ -337,15 +329,15 @@ p {
 
 .intro .light {
   color: #fefcf6;
-  margin-bottom: 3.5rem;
-  max-width: 24.75rem;
+  margin-bottom: 56px;
+  max-width: 396px;
   line-height: 26px;
 }
 
 .intro h1 {
-  max-width: 30.8125rem;
-  padding-top: 7.3125rem;
-  margin-bottom: 2rem;
+  max-width: 493px;
+  padding-top: 117px;
+  margin-bottom: 32px;
 }
 
 @media (max-width: 63.9375em) {
@@ -361,19 +353,11 @@ p {
 }
 
 .intro .wrapper {
-  margin-bottom: 8.5rem;
-}
-
-@media (max-width: 39.9375em) {
-  .collection .container {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    text-align: center;
-  }
+  margin-bottom: 136px;
 }
 
 .collection .pale {
-  font-size: 9.375rem;
+  font-size: 150px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#979ba0), to(#FEFCF7));
   background-image: linear-gradient(180deg, #979ba0, #FEFCF7);
   background-size: 100%;
@@ -384,14 +368,14 @@ p {
 
 @media (max-width: 63.9375em) {
   .collection .pale {
-    font-size: 6rem;
+    font-size: 80px;
     width: 100%;
   }
 }
 
 @media (max-width: 39.9375em) {
   .collection .pale {
-    font-size: 2.5rem;
+    font-size: 40px;
     width: 100%;
     text-align: center;
   }
@@ -404,7 +388,7 @@ p {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  gap: 1.875rem;
+  gap: 30px;
 }
 
 @media (max-width: 63.9375em) {
@@ -428,11 +412,11 @@ p {
 }
 
 .collection__image {
-  height: 12.0625rem;
+  height: 193px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  margin: 0 0 4.4375rem 0;
+  margin: 0 0 71px 0;
 }
 
 @media (max-width: 63.9375em) {
@@ -453,16 +437,16 @@ p {
 .collection__title {
   font-family: 'Fraunces', sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 32px;
   text-align: center;
   color: #333D4B;
-  padding-bottom: 1.5rem;
+  padding-bottom: 24px;
 }
 
 @media (max-width: 63.9375em) {
   .collection__title {
-    padding-top: 1.5625rem;
+    padding-top: 25px;
     text-align: left;
   }
 }
@@ -474,7 +458,7 @@ p {
 }
 
 .collection__description {
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 26px;
   text-align: center;
   color: #333D4B;
@@ -496,17 +480,16 @@ p {
 }
 
 .collection__item {
-  max-width: 15.9375rem;
+  max-width: 255px;
 }
 
 @media (max-width: 63.9375em) {
   .collection__item {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 15.9375rem 17.625rem;
-        grid-template-columns: 15.9375rem 17.625rem;
-    padding-left: 3.625rem;
-    padding-top: 0.9375rem;
+    -ms-grid-columns: 255px 282px;
+        grid-template-columns: 255px 282px;
+    padding-top: 15px;
   }
 }
 
@@ -535,13 +518,13 @@ p {
 }
 
 .benefits {
-  margin-top: 6.25rem;
-  margin-bottom: 21.9375rem;
+  margin-top: 100px;
+  margin-bottom: 351px;
 }
 
 @media (max-width: 39.9375em) {
   .benefits {
-    margin-top: 5rem;
+    margin-top: 80px;
   }
 }
 
@@ -560,8 +543,8 @@ p {
 
 @media (max-width: 39.9375em) {
   .benefits .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-bottom: 600px;
   }
 }
@@ -569,19 +552,19 @@ p {
 .benefits h2 {
   color: #fefcf6;
   text-align: center;
-  padding: 6.25rem 0 2rem 0;
-  font-size: 2.5rem;
+  padding: 100px 0 32px 0;
+  font-size: 40px;
 }
 
 @media (max-width: 63.9375em) {
   .benefits h2 {
-    padding-top: 3.5rem;
+    padding-top: 56px;
   }
 }
 
 @media (max-width: 39.9375em) {
   .benefits h2 {
-    font-size: 1.75rem;
+    font-size: 28px;
     line-height: 28px;
   }
 }
@@ -592,7 +575,7 @@ p {
   margin-left: auto;
   color: #fefcf6;
   text-align: center;
-  max-width: 33.75rem;
+  max-width: 540px;
   font-weight: 300;
   line-height: 26px;
 }
@@ -602,24 +585,25 @@ p {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  gap: 1.875rem;
+  gap: 30px;
   position: absolute;
   top: 346px;
+  margin-right: 57px;
 }
 
 @media (max-width: 63.9375em) {
   .benefits__grid {
+    max-width: 100%;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    gap: 1.5rem;
-    width: 100%;
+    gap: 24px;
     top: 285px;
   }
 }
 
 @media (max-width: 39.9375em) {
   .benefits__grid {
-    max-width: 295px;
+    max-width: 100%;
     text-align: center;
     margin-top: 45px;
     gap: 24px;
@@ -637,14 +621,11 @@ p {
     display: grid;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
-    margin-left: 57px;
-    margin-right: 57px;
   }
 }
 
 @media (max-width: 39.9375em) {
   .benefits__item {
-    margin: 0px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -665,11 +646,11 @@ p {
 }
 
 .benefits__image {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 72px;
+  height: 72px;
   background-size: cover;
-  margin-top: 4.5rem;
-  margin-bottom: 3.5rem;
+  margin-top: 72px;
+  margin-bottom: 56px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -694,11 +675,11 @@ p {
 .benefits__title {
   font-family: 'Fraunces', sans-serif;
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 24px;
   line-height: 32px;
   text-align: center;
   color: #fefcf6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 63.9375em) {
@@ -722,12 +703,12 @@ p {
   margin-left: auto;
   color: #fefcf6;
   text-align: center;
-  max-width: 21.875rem;
+  max-width: 350px;
   font-weight: 300;
   line-height: 26px;
-  padding: 0 2.9375rem;
-  margin-bottom: 3rem;
-  font-size: 0.9375rem;
+  padding: 0 47px;
+  margin-bottom: 48px;
+  font-size: 15px;
 }
 
 @media (max-width: 63.9375em) {
@@ -750,7 +731,7 @@ p {
 
 @media (max-width: 63.9375em) {
   .feature .container {
-    margin-top: 27.125rem;
+    margin-top: 434px;
   }
 }
 
@@ -762,12 +743,12 @@ p {
 
 .feature__title {
   color: #848990;
-  margin-bottom: 5rem;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 63.9375em) {
   .feature__title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
   }
 }
 
@@ -827,14 +808,14 @@ p {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  margin-top: 4.1875rem;
-  gap: 5.9375rem;
-  margin-bottom: 4rem;
+  margin-top: 67px;
+  gap: 95px;
+  margin-bottom: 64px;
 }
 
 @media (max-width: 63.9375em) {
   .feature__grid {
-    gap: 1.875rem;
+    gap: 30px;
   }
 }
 
@@ -851,9 +832,9 @@ p {
 
 .feature__subtitle {
   color: #343e4c;
-  margin-bottom: 2.625rem;
-  font-size: 2rem;
-  max-width: 12.5rem;
+  margin-bottom: 42px;
+  font-size: 32px;
+  max-width: 200px;
 }
 
 @media (max-width: 39.9375em) {
@@ -866,7 +847,7 @@ p {
 }
 
 .feature__number {
-  margin-bottom: 2.375rem;
+  margin-bottom: 38px;
   font-family: 'Fraunces', sans-serif;
   font-size: 4.5rem;
   color: #fdd6ba;
@@ -883,19 +864,30 @@ p {
 }
 
 .feature .button {
-  margin-bottom: 12.5rem;
+  margin-bottom: 200px;
+  max-width: 217px;
 }
 
 @media (max-width: 63.9375em) {
   .feature .button {
-    margin-bottom: 9rem;
+    margin-bottom: 144px;
   }
 }
 
 @media (max-width: 39.9375em) {
   .feature .button {
-    margin-left: 65px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
+}
+
+.feature .grid-button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .footer {
