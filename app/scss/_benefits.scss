@@ -23,6 +23,15 @@
         }
     }
 
+    .container--px {
+
+        @include breakpoint-down(medium) {
+            margin: 0;
+            padding-right: 0;
+
+        }
+    }
+
     h2 {
         color: $LightCream;
         text-align: center;
@@ -48,6 +57,11 @@
         max-width: 540px;
         font-weight: 300;
         line-height: 26px;
+
+        @include breakpoint-down(medium) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
 
     &__grid {
@@ -59,10 +73,11 @@
         margin-right: 57px;
 
         @include breakpoint-down(medium) {
-            max-width: 100%;
+            width: 100%;
             grid-template-columns: repeat(1, 1fr);
             gap: 24px;
             top: 285px;
+            padding-right: 114px;
         }
 
         @include breakpoint-down(small) {
@@ -91,11 +106,14 @@
     &__text {
 
         @include breakpoint-down(medium) {
+            width: 100%;
             text-align: left;
+            padding-right: 40px;
         }
 
         @include breakpoint-down(small) {
             text-align: center;
+            padding-right: 0;
         }
     }
 
@@ -161,13 +179,14 @@
             padding: 0px;
             margin-left: 0px;
             line-height: 25px;
+            max-width: 100%;
         }
 
         @include breakpoint-down(small) {
             text-align: center;
             margin-right: 0;
-            padding-right: 34px;
-            padding-left: 34px;
+            padding-right: 57px;
+            padding-left: 57px;
         }
     }
 }

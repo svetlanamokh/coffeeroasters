@@ -395,6 +395,11 @@ p {
   .collection__grid {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -480,7 +485,7 @@ p {
 }
 
 .collection__item {
-  max-width: 255px;
+  max-width: 300px;
 }
 
 @media (max-width: 63.9375em) {
@@ -508,6 +513,7 @@ p {
 @media (max-width: 63.9375em) {
   .collection__text {
     text-align: center;
+    padding-right: 40px;
   }
 }
 
@@ -549,6 +555,13 @@ p {
   }
 }
 
+@media (max-width: 63.9375em) {
+  .benefits .container--px {
+    margin: 0;
+    padding-right: 0;
+  }
+}
+
 .benefits h2 {
   color: #fefcf6;
   text-align: center;
@@ -580,6 +593,13 @@ p {
   line-height: 26px;
 }
 
+@media (max-width: 63.9375em) {
+  .benefits .light {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 .benefits__grid {
   display: -ms-grid;
   display: grid;
@@ -593,11 +613,12 @@ p {
 
 @media (max-width: 63.9375em) {
   .benefits__grid {
-    max-width: 100%;
+    width: 100%;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     gap: 24px;
     top: 285px;
+    padding-right: 114px;
   }
 }
 
@@ -635,13 +656,16 @@ p {
 
 @media (max-width: 63.9375em) {
   .benefits__text {
+    width: 100%;
     text-align: left;
+    padding-right: 40px;
   }
 }
 
 @media (max-width: 39.9375em) {
   .benefits__text {
     text-align: center;
+    padding-right: 0;
   }
 }
 
@@ -717,6 +741,7 @@ p {
     padding: 0px;
     margin-left: 0px;
     line-height: 25px;
+    max-width: 100%;
   }
 }
 
@@ -724,8 +749,8 @@ p {
   .benefits__description {
     text-align: center;
     margin-right: 0;
-    padding-right: 34px;
-    padding-left: 34px;
+    padding-right: 57px;
+    padding-left: 57px;
   }
 }
 
@@ -738,6 +763,12 @@ p {
 @media (max-width: 39.9375em) {
   .feature .container {
     margin-top: 717px;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .feature .container .container--px {
+    padding: 0;
   }
 }
 
@@ -861,6 +892,19 @@ p {
 
 .feature__description {
   color: #343e4c;
+}
+
+@media (max-width: 63.9375em) {
+  .feature__description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .feature__description {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .feature .button {

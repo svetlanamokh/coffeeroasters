@@ -8,6 +8,12 @@
         @include breakpoint-down(small) {
             margin-top: 717px;
         }
+
+        .container--px {
+            @include breakpoint-down(medium) {
+                padding: 0;
+            }
+        }
     }
 
     &__title {
@@ -107,6 +113,15 @@
 
     &__description {
         color: $DarkGreyBlue;
+
+        @include breakpoint-down(medium) {
+            font-size: 15px;
+        }
+
+        @include breakpoint-down(small) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
     }
 
     .button {
