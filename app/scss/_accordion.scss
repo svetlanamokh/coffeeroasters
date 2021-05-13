@@ -17,7 +17,6 @@
             display: none;
         }
 
-
         pre {
             font-family: 'Fraunces', sans-serif;
             font-weight: 900;
@@ -48,16 +47,12 @@
         
     }
 
-    
-
     .panel {
         
         background-color: $LightCream;
         display: none;
         overflow: hidden;
         max-width: 730px;
-        
-        
 
         &__grid {
             display: grid;
@@ -84,29 +79,30 @@
             &:hover {
                 background-color: $PaleOrange;
             }
-
         }
 
         &__title {
             padding-bottom: 24px;
         }
-
     }
 
     .visible {
         display: block;
     }
 
-    
     &__result {
         visibility: visible;
         background-color: $DarkGreyBlue;
-        height: 208px;
+        height: 270px;
         max-width: 730px;
         border-radius: 8px;
 
+        @include breakpoint-down(medium) {
+            height: 300px;
+        }
+
         @include breakpoint-down(small) {
-            height: 340px;
+            height: 370px;
         }
     }
 
@@ -119,6 +115,14 @@
         color: #FFFFFF;
         margin-left: 64px;
         padding-top: 47px;
+
+        @include breakpoint-down(medium) {
+            margin-bottom: 30px;
+        }
+
+        @include breakpoint-down(small) {
+            margin-left: 0;
+        }
     }
 
     .chosen-points {
@@ -127,7 +131,11 @@
         font-size: 24px;
         line-height: 40px;
         color: #FFFFFF;
-        margin-left: 64px;
+        margin: 0 64px 0 64px;
+
+        @include breakpoint-down(small) {
+            margin: 0;
+        }
     }
 
     .button {

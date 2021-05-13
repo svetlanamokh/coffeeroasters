@@ -16,6 +16,12 @@
         }
     }
 
+    .container--px {
+        @include breakpoint-down(medium) {
+            padding: 0;
+        }
+    }
+
     &__image {
         background: url(/images/about/desktop/image-commitment.jpg) no-repeat;
         background-size: 100%;

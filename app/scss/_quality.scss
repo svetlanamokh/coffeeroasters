@@ -15,7 +15,7 @@
 
         @include breakpoint-down(medium) {
             grid-template-columns: 1fr;
-            gap: 64px;
+            gap: 0px;
             text-align: center;
         }
     }
@@ -23,15 +23,10 @@
     &__text {
 
         @include breakpoint-down(medium) {
-            position: relative;
-            bottom: -200px;
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 90px;
         }
-
-        @include breakpoint-down(small) {
-            position: relative;
-            bottom: -100px;
-        }
-        
     }
 
 
@@ -50,41 +45,31 @@
 
         @include breakpoint-down(medium) {
             max-width: 100%;
-            padding: 0px 74px 67px 74px;
         }
 
         @include breakpoint-down(small){
             font-size: 15px;
             max-width: 100%;
-            padding: 0px 24px 61px 24px;
+        }
+    }
+
+    &__pic {
+        padding-top: 80px;
+
+        @include breakpoint-down(medium) {
+            padding: 0px;
         }
     }
 
 
     &__image {
         background: url(/images/about/desktop/image-quality.jpg) no-repeat;
-        height: 474px;
+        height: 330px;
         max-width: 445px;
         border-radius: 8px;
-        position: relative;
-        top: -75px;
 
         @include breakpoint-down(medium) {
-            background: url(/images/about/tablet/image-quality.jpg) no-repeat;
-            top: -520px;
-            left: 57px;
-            max-width: 573px;
-            height: 320px;
-            background-size: cover;
-        }
-
-        @include breakpoint-down(small){
-            background: url(/images/about/mobile/image-quality.jpg) no-repeat;
-            background-size: cover;
-            max-width: 279px;
-            height: 156px;
-            top: -530px;
-            left: 35px;
+            display: none;
         }
     }
 }
